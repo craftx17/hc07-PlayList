@@ -8,7 +8,9 @@ OAuth2 swift lib from MIT: https://github.com/OAuthSwift/OAuthSwift
 
 SwiftyJSON: https://github.com/SwiftyJSON/SwiftyJSON
 
-twitter api docs: http://dev.twitter.com
+https://dev.twitter.com/oauth/application-only
+
+https://dev.twitter.com/oauth/application-only
 
 https://grokswift.com/alamofire-OAuth2/
 
