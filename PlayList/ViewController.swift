@@ -249,108 +249,229 @@ class ViewController: UIViewController
     
     func showTimeline1() {
         preferences.append("NFL")
-        button.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "NFL" }
+        }
+        else {
+            button.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
     
     func showTimeline2() {
         preferences.append("NHL")
-        button2.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button2.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button2.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "NHL" }
+        }
+        else {
+            button2.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
     
     func showTimeline3() {
         preferences.append("MLB")
-        button3.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button3.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button3.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "MLB" }
+        }
+        else {
+            button3.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
     
     func showTimeline4() {
         preferences.append("NBA")
-        button4.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button4.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button4.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "NBA" }
+        }
+        else {
+            button4.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
     
     func showTimeline5() {
         preferences.append("Pacers")
-        button5.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button5.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button5.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "Pacers" }
+        }
+        else {
+            button5.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
     
     
     func showTimeline6() {
         preferences.append("Colts")
-        button6.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button6.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button6.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "Colts" }
+        }
+        else {
+            button6.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
     
     
     func showTimeline7() {
         preferences.append("Stars")
-        button7.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button7.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button7.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "Stars" }
+        }
+        else {
+            button7.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
     
     func showTimeline8() {
         preferences.append("Cubs")
-        button8.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button8.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button8.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "Cubs" }
+        }
+        else {
+            button8.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
     
     func showTimeline9() {
         preferences.append("Cowboys")
-        button9.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button9.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button9.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "Cowboys" }
+        }
+        else {
+            button9.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
     
     func showTimeline10() {
         preferences.append("Steph Curry")
-        button10.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button10.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button10.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "Steph Curry" }
+        }
+        else {
+            button10.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
     
     func showTimeline11() {
         preferences.append("Aroldis Chapman")
-        button11.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button11.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button11.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "Aroldis Chapman" }
+        }
+        else {
+            button11.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
     
     func showTimeline12() {
         preferences.append("Lebron James")
-        button12.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button12.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button12.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "Lebron James" }
+        }
+        else {
+            button12.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
     
     func showTimeline13() {
         preferences.append("Tiger Woods")
-        button13.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button13.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button13.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "Tiger Woods" }
+        }
+        else {
+            button13.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
 
     func showTimeline14() {
         preferences.append("PGA")
-        button14.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button14.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button14.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "PGA" }
+        }
+        else {
+            button14.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
 
     func showTimeline15() {
         preferences.append("Jordan Spieth")
-        button15.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button15.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button15.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "Jordan Spieth" }
+        }
+        else {
+            button15.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
 
     func showTimeline16() {
         preferences.append("Von Miller")
-        button16.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button16.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button16.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "Von Miller" }
+        }
+        else {
+            button16.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
 
     func showTimeline17() {
         preferences.append("Drew Brees")
-        button17.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button17.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button17.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "Drew Brees" }
+        }
+        else {
+            button17.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
 
     func showTimeline18() {
         preferences.append("OG Anunoby")
-        button18.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button18.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button18.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "OG Anunoby" }
+        }
+        else {
+            button18.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
 
     func showTimeline19() {
         preferences.append("Matt Stafford")
-        button19.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button19.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button19.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "Matt Stafford" }
+        }
+        else {
+            button19.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
     
     func showTimeline20() {
         preferences.append("Olympics")
-        button20.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        if (button20.backgroundColor == UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)) {
+            button20.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
+            preferences = preferences.filter { $0 != "Olympics" }
+        }
+        else {
+            button20.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
+        }
     }
 
     
     func dismissTimeline() {
+        preferences.removeAll()
         dismiss(animated: true, completion: nil)
         button.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
         button2.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
