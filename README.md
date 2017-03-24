@@ -1,18 +1,8 @@
 # hc07-PlayList
 Xavier Craft Senior Project Repository
 
-
+PlayList is an application that brings you real-time updates about your favorite sports, teams, and players directly from the Twitter API.
 
 resources:
-OAuth2 swift lib from MIT: https://github.com/OAuthSwift/OAuthSwift
-
-SwiftyJSON: https://github.com/SwiftyJSON/SwiftyJSON
-
-https://dev.twitter.com/oauth/application-only
-
-https://dev.twitter.com/oauth/application-only
-
-https://grokswift.com/alamofire-OAuth2/
-
-http://stackoverflow.com/questions/38544547/twitter-api-in-swift-via-alamofire
-
+Fabric Plugin & Documentation
+Twitter API & Documentation
