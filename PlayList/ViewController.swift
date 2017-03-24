@@ -43,8 +43,6 @@ class ViewController: UIViewController
         
         scrollView.backgroundColor = UIColor.darkGray
         
-        nextButton.addTarget(self, action: #selector(finishPref), for: .touchUpInside)
-        
         button.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
         button.setTitle("NFL", for: .normal)
         button.setTitleColor(UIColor.darkGray, for: .normal)
@@ -231,21 +229,16 @@ class ViewController: UIViewController
     
     var preferences = [String]()
     
-    func finishPref() {
-        print(preferences)
-        
-        // Create an API client and data source to fetch Tweets for the timeline
-        let client = TWTRAPIClient()
-        
-        // Create the timeline view controller
-        let timelineViewControlller = TWTRTimelineViewController(dataSource: TWTRSearchTimelineDataSource.init(searchQuery: "\(preferences[0]) filter:verified", apiClient: client, languageCode: "en", maxTweetsPerRequest: 500))
-        // Create done button to dismiss the view controller
-        let barButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissTimeline))
-        timelineViewControlller.navigationItem.leftBarButtonItem = barButton
-        // Create a navigation controller to hold the
-        let navigationController = UINavigationController(rootViewController: timelineViewControlller)
-        showDetailViewController(navigationController, sender: self)
+    @IBAction func nextPressed(_ sender: Any){
+        performSegue(withIdentifier: "ScoresController", sender: preferences)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ScoresController {
+            destination.preferences = preferences
+        }
+    }
+    
     
     func showTimeline1() {
         preferences.append("NFL")
@@ -467,32 +460,6 @@ class ViewController: UIViewController
         else {
             button20.backgroundColor = UIColor(red:0.29, green:0.87, blue:0.71, alpha:1.0)
         }
-    }
-
-    
-    func dismissTimeline() {
-        preferences.removeAll()
-        dismiss(animated: true, completion: nil)
-        button.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button2.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button3.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button4.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button5.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button6.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button7.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button8.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button9.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button10.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button11.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button12.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button13.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button14.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button15.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button16.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button17.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button18.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button19.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
-        button20.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
     }
 }
 
