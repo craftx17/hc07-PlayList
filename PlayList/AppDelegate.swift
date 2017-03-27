@@ -2,11 +2,10 @@
 //  AppDelegate.swift
 //  PlayList
 //
-//  Created by Anthony Bond on 11/16/16.
+//  Created by Xavier Craft on 11/30/16.
 //  Copyright © 2016 craftx17. All rights reserved.
 //
 
-import UIKit
 import Fabric
 import TwitterKit
 
@@ -18,6 +17,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Fabric.with([Twitter.self])
+        // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let defaults = UserDefaults.standard
+        let prefs = defaults.value(forKey: "preferences") as! [String]
+        var initialViewController = UIViewController()
+        
+        if (!prefs.isEmpty) {
+            initialViewController = storyboard.instantiateViewController(withIdentifier: "MainController")
+        } else {
+            initialViewController = storyboard.instantiateViewController(withIdentifier: "PrefController")
+        }
+        
+        
+        
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
